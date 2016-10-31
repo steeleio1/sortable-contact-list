@@ -3,14 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Sortable Contact List</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+
+<div class="mainBox">
+  <div class="leftBox">
+    <header class="header">
+      <span class="title">List of people</span>
+    </header>
+    <main>
+      <ul class="nameListBox">
+      </ul>
+    </main>
+  </div>
+  
+  <div class="rightBox">
+    <div class="sortDirBox">Sort direction:
+      <input type="radio" class="radio" name="rb" value="asc">
+      <label for="rb1">ASC</label>
+      <input type="radio" class="radio" name="rb" value="desc">
+      <label for="rb2">DSC</label>
     </div>
+    <div class="sortByBox">Sort by:
+      <select>
+        <option value="age">Age</option>
+        <option value="firstName">First Name</option>
+        <option value="lastName">Last Name</option>
+      </select>
+    </div>
+    <div class="buttonBox">
+      <button class="button">Sort List</button>
+    </div>
+  </div>
+</div>
+
+
+
     <script src="js/bundle.js"></script>
   </body>
 </html>
